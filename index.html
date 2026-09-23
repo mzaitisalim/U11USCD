@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>USCD U11 – Accueil</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', Arial, sans-serif;
+            background: linear-gradient(180deg, #002B6F 0%, #001A40 100%);
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #002B6F;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 4px solid #C00000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header img {
+            height: 90px;
+        }
+
+        /* MENU */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #C00000;
+            transform: scale(1.1);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        /* PHOTO D'ÉQUIPE */
+        .team-photo {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .team-photo img {
+            width: 85%;
+            max-width: 1000px;
+            border: 6px solid white;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            transition: 0.4s;
+        }
+
+        .team-photo img:hover {
+            transform: scale(1.02);
+        }
+
+        /* ANIMATION */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="logo.png" alt="Logo USCD">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="effectif.html">Effectif</a></li>
+                <li><a href="jonglage.html">Jonglage</a></li>
+                <li><a href="voixdupeuple.html">Voix du Peuple</a></li>
+                <li><a href="hommedeseance.html">Homme de Séance</a></li>
+                <li><a href="galerie.html">Galerie Photos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECTION ACCUEIL -->
+    <section class="hero">
+        <h1>USCD U11</h1>
+        <p>Bienvenue sur le site officiel des U11 – un espace fun, pro et motivant pour les joueurs et les parents.</p>
+
+        <div class="team-photo">
+            <img src="/U10ARCDECERCLE.JPG" alt="Photo de l'équipe U11">
+        </div>
+    </section>
+
+</body>
+</html>
+
